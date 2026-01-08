@@ -7,23 +7,20 @@ An end-to-end data engineering pipeline that simulates user interactions, perfor
 Below is the visual evidence of the microservice in action. These screenshots represent the three main components of the analytical output:
 
 ### 1. Executive Summary & KPIs
-**[USE Capture1.PNG HERE]**
 This section displays the high-level metrics after the ETL pipeline has cleaned the raw data (identifying 1,990 valid users).
 ![KPI Overview](assets/Capture1.PNG)
 
 ### 2. Behavioral Analysis (Scatter Plot)
-**[USE Capture2.PNG HERE]**
 This chart visualizes user engagement (Total Views) against Recency to identify clusters of high-intent customers.
 ![Behavioral Analysis](assets/Capture2.PNG)
 
 ### 3. Price Sensitivity (Box Plot)
-**[USE Capture 3.PNG HERE]**
 This distribution analysis compares the average price viewed by 'Booked' vs 'Not Booked' users to detect price resistance.
 ![Price Impact](assets/Capture3.PNG)
 
 ---
 
-## 🛠️ The Pipeline
+## The Pipeline
 1. **Ingestion:** Simulates 2,000+ user interactions using `Faker`.
 2. **Data Quality (DE):** Automated checks for:
    - **Completeness:** Median imputation for missing pricing.
@@ -32,8 +29,9 @@ This distribution analysis compares the average price viewed by 'Booked' vs 'Not
 3. **Feature Engineering (DS):** Generating Recency, Frequency, and Monetary (RFM) features.
 4. **Visualization:** A Streamlit dashboard utilizing Plotly.
 
-## 🚀 How to Run
+##  How to Run
 ```bash
 pip install -r requirements.txt
 python data_pipeline.py
 streamlit run app.py
+```
