@@ -16,7 +16,7 @@ This chart visualizes user engagement (Total Views) against Recency to identify 
 
 ### 3. Price Sensitivity (Box Plot)
 This distribution analysis compares the average price viewed by 'Booked' vs 'Not Booked' users to detect price resistance.
-![Price Impact](assets/Capture3.PNG)
+![Price Impact](assets/Capture 3.PNG)
 
 ---
 
